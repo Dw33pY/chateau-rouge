@@ -1,0 +1,9 @@
+{
+  "name": "chateau-rouge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Château Rouge — hand-coded website for the family-run garden restaurant on Kindaruma Road, Kilimani, Nairobi.",
+  "scripts": {
+    "dev": "node dev-server.js"
+  }
+}

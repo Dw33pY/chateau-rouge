@@ -1,0 +1,6 @@
+# Local preview tooling — not part of the published site
+dev-server.js
+package.json
+README.md
+.vscode/
+.gitignore

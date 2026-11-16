@@ -1,0 +1,15 @@
+# Local preview artefacts
+.vercel
+node_modules
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vercel
+.env*
+
+.env.local
+.vercel/
+.env*.local

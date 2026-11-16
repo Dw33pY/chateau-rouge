@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Nothing private on this site. 404 is noindexed in the page itself.
+Sitemap: https://chateau-rouge-nairobi.vercel.app/sitemap.xml
+

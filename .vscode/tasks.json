@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Serve site (clean URLs)",
+      "type": "shell",
+      "command": "node dev-server.js",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" },
+      "detail": "Local preview at http://localhost:4173 — resolves /menu like Vercel"
+    }
+  ]
+}

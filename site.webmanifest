@@ -1,0 +1,15 @@
+{
+  "name": "Château Rouge — Kilimani, Nairobi",
+  "short_name": "Château Rouge",
+  "description": "African cooking, garden tables. Kindaruma Road, Kilimani, Nairobi.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F3EADB",
+  "theme_color": "#17221B",
+  "icons": [
+    { "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/favicon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

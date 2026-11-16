@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Château Rouge — garden restaurant in Kilimani, Nairobi</title>
+  <meta name="description" content="A family-run garden restaurant on Kindaruma Road, Kilimani. African cooking, fish and chicken from the fire, open daily from 10am until late.">
+  <link rel="canonical" href="https://chateau-rouge-nairobi.vercel.app/">
+
+  <!-- Social cards -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:site_name" content="Château Rouge">
+  <meta property="og:title" content="Château Rouge — garden restaurant in Kilimani">
+  <meta property="og:description" content="Fish, fire and a table under the trees. African cooking on Kindaruma Road, Nairobi, from 10am until late.">
+  <meta property="og:image" content="https://chateau-rouge-nairobi.vercel.app/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://chateau-rouge-nairobi.vercel.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Château Rouge — garden restaurant in Kilimani">
+  <meta name="twitter:description" content="Fish, fire and a table under the trees. African cooking on Kindaruma Road, Nairobi.">
+  <meta name="twitter:image" content="https://chateau-rouge-nairobi.vercel.app/assets/img/og-image.png">
+  <meta name="theme-color" content="#F3EADB">
+
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Typography: self-hosted, so the first paint is the real typeface -->
+  <link rel="preload" href="/assets/fonts/fraunces-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/karla-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Château Rouge",
+    "description": "Family-run garden restaurant in Kilimani, Nairobi. African cooking, fish and chicken from the grill, open daily from 10am until midnight.",
+    "servesCuisine": ["African", "Kenyan"],
+    "priceRange": "KES 1,300–3,200",
+    "telephone": "+254-722-240630",
+    "url": "https://chateau-rouge-nairobi.vercel.app/",
+    "hasMenu": "https://chateau-rouge-nairobi.vercel.app/menu",
+    "acceptsReservations": "True",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kindaruma Road",
+      "addressLocality": "Nairobi",
+      "addressRegion": "Nairobi County",
+      "addressCountry": "KE"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "00:00"
+      }
+    ],
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Outdoor seating", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Parking", "value": true }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Château Rouge",
+    "url": "https://chateau-rouge-nairobi.vercel.app/"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="masthead" id="site-header">
+    <div class="masthead__inner">
+      <a class="brand" href="/" aria-label="Château Rouge — home">
+        <span class="brand__seal" aria-hidden="true">CR</span>
+        <span class="brand__name">Château Rouge</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="/menu">The board</a>
+        <a href="/story">The house</a>
+        <a href="/visit">Visit</a>
+      </nav>
+
+      <div class="masthead__actions">
+        <a class="masthead__phone" href="tel:+254722240630">+254 722 240630</a>
+        <a class="btn btn--sm" href="tel:+254722240630">Reserve</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile navigation: full-screen, large targets, closes on Esc -->
+  <div class="nav-overlay" id="nav-panel" hidden>
+    <nav aria-label="Mobile">
+      <a class="nav-overlay__link" href="/menu">The board <span>01</span></a>
+      <a class="nav-overlay__link" href="/story">The house <span>02</span></a>
+      <a class="nav-overlay__link" href="/visit">Visit <span>03</span></a>
+    </nav>
+    <p class="nav-overlay__meta">
+      <a href="tel:+254722240630">+254 722 240630</a>
+      <span>Kindaruma Road, Kilimani, Nairobi</span>
+      <span>Every day, 10am till late · Garden tables</span>
+    </p>
+  </div>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__type">
+        <p class="hero__eyebrow">Kindaruma Road · Kilimani, Nairobi</p>
+
+        <h1 id="hero-title">
+          <span class="line">Fish, fire,</span>
+          <span class="line">and a table</span>
+          <span class="line line--soft">under the trees.</span>
+        </h1>
+
+        <p class="hero__copy">Château Rouge is a family-run garden restaurant in Kilimani: African cooking, a grill that runs all day, and enough room for everyone at the table.</p>
+
+        <div class="hero__actions">
+          <a class="btn" href="tel:+254722240630">Reserve a table <span class="btn__arrow" aria-hidden="true"></span></a>
+          <a class="link-line" href="/menu">See the board <span aria-hidden="true">→</span></a>
+        </div>
+
+        <dl class="hero__meta">
+          <div>
+            <dt>Where</dt>
+            <dd>Kindaruma Road, Kilimani</dd>
+          </div>
+          <div>
+            <dt>When</dt>
+            <dd>Daily, 10am till late</dd>
+          </div>
+          <div>
+            <dt>Good to know</dt>
+            <dd>Garden tables · Parking</dd>
+          </div>
+        </dl>
+      </div>
+
+      <figure class="hero__figure">
+        <img src="/assets/img/garden-dusk.jpg"
+             alt="Lantern-lit garden terrace with wooden tables and red cushioned chairs under trees"
+             width="1000" height="1250" fetchpriority="high">
+        <figcaption class="hero__caption">Dinner under the trees</figcaption>
+        <span class="hero__seal" aria-hidden="true"><span>CR</span><small>Kilimani</small></span>
+      </figure>
+    </section>
+
+    <!-- ================= 01 · THE HOUSE ================= -->
+    <section class="idea" aria-labelledby="idea-title">
+      <div class="wrap idea__grid">
+        <div class="idea__margin" data-reveal>
+          <p class="label">01 — The house</p>
+          <em>Nyumbani,<br>Kilimani.</em>
+          <p class="small">At home, on Kindaruma Road</p>
+        </div>
+
+        <div class="idea__body" data-reveal data-delay="1">
+          <h2 id="idea-title">A red house with a garden for a dining room.</h2>
+          <p>Château Rouge sits off Kindaruma Road in Kilimani, with tables in the garden and a dining room lined with African art. It is family-run, and it shows in the way the place is kept: the same faces, the same welcome, the same table if you ask for it.</p>
+          <p>The kitchen cooks African food without ceremony — fish, chicken, samosas, mussels — and the grill runs from lunch until late. Long tables, birthdays, meetings that turn into lunch: the room was built for all of it.</p>
+
+          <svg class="idea__diagram" viewBox="0 0 420 120" fill="none" aria-hidden="true" focusable="false">
+            <rect x="0.5" y="34.5" width="170" height="54" stroke="currentColor"/>
+            <rect x="249.5" y="34.5" width="170" height="54" stroke="currentColor"/>
+            <line x1="170.5" y1="34.5" x2="249.5" y2="34.5" stroke="currentColor" stroke-dasharray="2 4"/>
+            <line x1="170.5" y1="88.5" x2="249.5" y2="88.5" stroke="currentColor" stroke-dasharray="2 4"/>
+            <circle cx="210" cy="61.5" r="3.5" fill="#6E1B24"/>
+            <text x="85" y="22" text-anchor="middle" fill="currentColor" font-family="Karla, sans-serif" font-size="11" letter-spacing="2.2">GARDEN</text>
+            <text x="334" y="22" text-anchor="middle" fill="currentColor" font-family="Karla, sans-serif" font-size="11" letter-spacing="2.2">DINING ROOM</text>
+            <text x="210" y="112" text-anchor="middle" fill="#6E1B24" font-family="Karla, sans-serif" font-size="10" letter-spacing="2">ONE HOUSE</text>
+          </svg>
+
+          <p style="margin-top: 24px"><a class="link-line" href="/story">Read the house story <span aria-hidden="true">→</span></a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 02 · TODAY'S BOARD ================= -->
+    <section class="carte" aria-labelledby="carte-title">
+      <div class="wrap">
+        <div class="carte__sheet" data-reveal>
+          <div class="carte__head">
+            <div>
+              <h2 class="carte__title" id="carte-title">Today's board</h2>
+              <p class="carte__sub">African cooking · fish, fire and garden · Kilimani</p>
+            </div>
+            <span class="seal" aria-hidden="true"><span>CR</span><small>Château Rouge</small></span>
+          </div>
+
+          <ul class="dish-list" style="margin-top: 28px">
+            <li class="dish dish--plain">
+              <h3 class="dish__name">Whole fried fish</h3>
+              <p class="dish__desc">The dish the table orders first. Served whole, to share.</p>
+            </li>
+            <li class="dish dish--plain">
+              <h3 class="dish__name">Dry fry chicken</h3>
+              <p class="dish__desc">Chopped and fried down with onion and chilli, the Kenyan way.</p>
+            </li>
+            <li class="dish dish--plain">
+              <h3 class="dish__name">Chama fish</h3>
+              <p class="dish__desc">Small fish, fried crisp. Best eaten with your fingers.</p>
+            </li>
+            <li class="dish dish--plain">
+              <h3 class="dish__name">Grilled chicken</h3>
+              <p class="dish__desc">Over the fire, for the people who came for the grill.</p>
+            </li>
+            <li class="dish dish--plain">
+              <h3 class="dish__name">Samosa</h3>
+              <p class="dish__desc">Crisp pastry, hot filling, gone in three bites.</p>
+            </li>
+            <li class="dish dish--plain">
+              <h3 class="dish__name">Mussels</h3>
+              <p class="dish__desc">A bowl for the middle of the table.</p>
+            </li>
+          </ul>
+
+          <div class="carte__foot">
+            <p>The kitchen cooks a longer menu than this, and it changes with the day. Call and we'll tell you what's on. Price guide: KES 1,300–3,200 per person.</p>
+            <a class="link-line" href="/menu">The full board <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 03 · ALL DAY ================= -->
+    <section class="dayline" aria-labelledby="dayline-title">
+      <div class="wrap">
+        <div class="dayline__head" data-reveal>
+          <p class="label" style="color: rgb(242 233 216 / .7)">02 — All day</p>
+          <h2 id="dayline-title">Breakfast to last orders, every day.</h2>
+          <p>The gate opens at ten and the kitchen stays on until midnight. Come for a late breakfast, a long lunch, or dinner once the lanterns are lit.</p>
+        </div>
+
+        <ol class="dayline__track">
+          <li class="dayline__step" data-reveal>
+            <span class="dayline__time">10am</span>
+            <div>
+              <h3>The gate opens</h3>
+              <p>Breakfast, and the garden before the day gets hot.</p>
+            </div>
+          </li>
+          <li class="dayline__step" data-reveal data-delay="1">
+            <span class="dayline__time">1pm</span>
+            <div>
+              <h3>Lunch</h3>
+              <p>The grill is on and the long tables start to fill.</p>
+            </div>
+          </li>
+          <li class="dayline__step" data-reveal data-delay="2">
+            <span class="dayline__time">6pm</span>
+            <div>
+              <h3>Dinner</h3>
+              <p>Lanterns, fried fish, and the quieter half of the garden.</p>
+            </div>
+          </li>
+          <li class="dayline__step" data-reveal data-delay="3">
+            <span class="dayline__time">Late</span>
+            <div>
+              <h3>Last orders</h3>
+              <p>The kitchen closes at midnight. The table doesn't have to.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= 04 · THE GARDEN ================= -->
+    <section class="room" aria-labelledby="room-title">
+      <div class="wrap room__grid">
+        <div class="room__head" data-reveal>
+          <p class="label">03 — The garden</p>
+          <h2 id="room-title">Tables under the trees.</h2>
+          <p>Most people ask for the garden, and most people get it. It is the reason the place works — a green, unhurried room with the kitchen a few steps away.</p>
+        </div>
+
+        <div class="room__notes">
+          <div class="room__note" data-reveal>
+            <span>01</span>
+            <div>
+              <h3>Ask for outside</h3>
+              <p>Garden tables sit under the trees. Request one when you call.</p>
+            </div>
+          </div>
+          <div class="room__note" data-reveal data-delay="1">
+            <span>02</span>
+            <div>
+              <h3>Bring everyone</h3>
+              <p>Birthdays, family lunches, weddings, work meetings — the room takes groups.</p>
+            </div>
+          </div>
+          <div class="room__note" data-reveal data-delay="2">
+            <span>03</span>
+            <div>
+              <h3>Park inside</h3>
+              <p>There is parking on the property, off the road.</p>
+            </div>
+          </div>
+          <div class="room__note" data-reveal data-delay="3">
+            <span>04</span>
+            <div>
+              <h3>Take it home</h3>
+              <p>Takeaway and delivery, for the evenings the garden has to wait.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 05 · GUEST BOOK ================= -->
+    <section class="guestbook" aria-labelledby="guestbook-title">
+      <div class="wrap guestbook__grid">
+        <div class="guestbook__head" data-reveal>
+          <p class="label">Guest book</p>
+          <h2 id="guestbook-title">What people say after.</h2>
+          <p class="small">Reviews from the restaurant's public Google listing.</p>
+        </div>
+
+        <div class="quotes">
+          <figure class="quote quote--lead" data-reveal>
+            <blockquote>“The ambience is great, with plenty of greenery in the outdoor sitting space. Serving a variety of African dishes, the food is great. I had dry fry chicken and it was great.”</blockquote>
+            <figcaption><strong>Patrick M</strong> <span>Google review</span></figcaption>
+          </figure>
+
+          <div class="quote-stack">
+            <figure class="quote" data-reveal data-delay="1">
+              <blockquote>“Great chama fish.”</blockquote>
+              <figcaption><strong>Antony Miano</strong> <span>Google review</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 06 · VISIT ================= -->
+    <section class="visit-band" id="visit" aria-labelledby="visit-title">
+      <div class="wrap visit-band__grid">
+        <div data-reveal>
+          <p class="label" style="color: rgb(242 233 216 / .7)">Visit</p>
+          <h2 id="visit-title">Find us in Kilimani.</h2>
+
+          <address>
+            Kindaruma Road
+            <span>Kilimani, Nairobi</span>
+          </address>
+
+          <table class="hours">
+            <caption>Hours</caption>
+            <tbody>
+              <tr><th scope="row">Monday – Sunday</th><td>10am – midnight</td></tr>
+              <tr><th scope="row">Kitchen</th><td>Until late</td></tr>
+            </tbody>
+          </table>
+
+          <button class="copy-address" type="button" data-copy-address="Château Rouge, Kindaruma Road, Kilimani, Nairobi">Copy address</button>
+          <p class="small" role="status" aria-live="polite" data-copy-status style="color: var(--ochre); margin-top: 8px; min-height: 1.2em"></p>
+        </div>
+
+        <div data-reveal data-delay="1">
+          <p class="small" style="color: rgb(242 233 216 / .6); margin-bottom: 10px">Reservations by telephone</p>
+          <a class="visit-band__phone" href="tel:+254722240630">+254 722 240630</a>
+
+          <div class="visit-band__contact">
+            <a href="tel:+254722240630">+254 722 240630 <span>Call</span></a>
+            <a href="https://maps.google.com/?q=Chateau+Rouge+Kindaruma+Road+Kilimani+Nairobi" target="_blank" rel="noopener">Directions <span>Google Maps</span></a>
+            <p>Groups &amp; celebrations <span>Call ahead</span></p>
+            <p>Takeaway &amp; delivery <span>Call the kitchen</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div>
+          <p class="footer__wordmark">Château <em>Rouge</em></p>
+          <p class="footer__tagline">African cooking, garden tables. Kindaruma Road, Kilimani, Nairobi.</p>
+        </div>
+
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h2>Table</h2>
+            <ul>
+              <li><a href="/menu">The board</a></li>
+              <li><a href="/story">The house</a></li>
+              <li><a href="/visit">Visit us</a></li>
+              <li><a href="tel:+254722240630">Reserve by phone</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h2>House</h2>
+            <ul>
+              <li><a href="tel:+254722240630">+254 722 240630</a></li>
+              <li><a href="https://maps.google.com/?q=Chateau+Rouge+Kindaruma+Road+Kilimani+Nairobi" target="_blank" rel="noopener">Directions</a></li>
+              <li><a href="/visit">Parking &amp; hours</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Château Rouge · Kindaruma Road, Kilimani, Nairobi</p>
+        <p class="footer__credit">Set by hand, rule by rule — <a href="https://dw33py.netlify.app" target="_blank" rel="noopener">Dw33pY</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
+
