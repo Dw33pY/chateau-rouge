@@ -1,5 +1,8 @@
 # Château Rouge — website
 
+**Live:** https://chateau-rouge-nairobi.vercel.app
+**Repo:** https://github.com/Dw33pY/chateau-rouge
+
 A hand-coded site for **Château Rouge**, the family-run garden restaurant on
 Kindaruma Road, Kilimani, Nairobi. Four pages, no framework, no build step, no
 dependencies. Open the folder, run one command, and you are looking at it.
@@ -141,7 +144,8 @@ nothing loops in the reading path — and everything stops under
 ## 6. Deploy to Vercel
 
 This folder is already a Vercel project shape: static files at the root and a
-`vercel.json` with clean URLs, security headers and a cache policy.
+`vercel.json` with clean URLs, security headers and a cache policy. It is
+deployed at **https://chateau-rouge-nairobi.vercel.app**.
 
 ```bash
 npx vercel --prod

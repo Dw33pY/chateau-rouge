@@ -48,6 +48,7 @@ const SETTINGS = {
   if (!toggle || !panel) return;
 
   const firstLink = panel.querySelector('a');
+  const pageRegions = [document.getElementById('main'), document.querySelector('.site-footer')].filter(Boolean);
 
   function open() {
     panel.hidden = false;
@@ -57,6 +58,7 @@ const SETTINGS = {
       toggle.setAttribute('aria-expanded', 'true');
       toggle.setAttribute('aria-label', 'Close menu');
       document.body.classList.add('is-locked');
+      pageRegions.forEach((region) => { region.inert = true; }); // keep focus in the menu
       if (firstLink) firstLink.focus();
     });
   }
@@ -66,6 +68,7 @@ const SETTINGS = {
     toggle.setAttribute('aria-expanded', 'false');
     toggle.setAttribute('aria-label', 'Open menu');
     document.body.classList.remove('is-locked');
+    pageRegions.forEach((region) => { region.inert = false; });
     if (returnFocus) toggle.focus();
 
     // wait for the fade before removing from the tab order
@@ -87,6 +90,22 @@ const SETTINGS = {
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
       close();
+    }
+
+    // Tab loop between the toggle and the panel links (fallback where inert is unsupported)
+    if (event.key !== 'Tab' || toggle.getAttribute('aria-expanded') !== 'true') return;
+    const items = [
+      ...document.querySelectorAll('.masthead a[href], .masthead button'),
+      ...panel.querySelectorAll('a[href]')
+    ];
+    const first = items[0];
+    const last = items[items.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
     }
   });
 
